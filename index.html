@@ -7,12 +7,13 @@
     <h1>This is a Heading</h1>
     <p>This is a paragraph.</p>
 
-<!--    <script type="text/javascript">
+<script type="text/javascript">
     (function(global) {
       let s = global.document.createElement('script');
       s.src = "http://localhost:2003/sdk.js";
       s.async = true;
-      window.compliantIO.config = {
+      window.compliantIO = {
+        config: {
         interface: {
           leadColor: '#ff0000',
           position: 'Right',
@@ -21,7 +22,7 @@
           buttonColor: '#ffde05',
           horizontalOffset: 30,
           verticalOffset: 60,
-          hide: false,
+          hide: Show,
           shape: 'Squircle Big',
           size: 'Big',
           horizontalPosition: 'Left',
@@ -31,53 +32,16 @@
           buttonColor: '#ffde05',
           horizontalOffset: 10,
           verticalOffset: 10,
-          hide: false,
+          hide: Show,
           shape: 'Round',
           size: 'Medium',
           horizontalPosition: 'Left',
           verticalPosition: 'Top',
         },
-      };
+      },
+    };
       global.document.body.appendChild(s)
-  }(window)); -->
-    <script type="text/javascript">
-    (function(global) {
-          let s = global.document.createElement('script');
-          s.src = "http://localhost:2003/sdk.js";
-          s.async = true;
-          window.compliantIO = {
-              config: {
-                  interface: {
-              leadColor: '#242424',
-              position: 'Right',
-            },
-            trigger: {
-              buttonColor: '#141515',
-              horizontalOffset: 10,
-              verticalOffset: 10,
-              hide: false,
-              shape: 'Squircle Big',
-              size: 'Medium',
-              horizontalPosition: 'Left',
-              verticalPosition: 'Center',
-            },
-            mobile: {
-              buttonColor: '#017A4F',
-              horizontalOffset: 10,
-              verticalOffset: 10,
-              hide: false,
-              shape: 'Round',
-              size: 'Medium',
-              horizontalPosition: 'Left',
-              verticalPosition: 'Bottom',
-            },
-              }
-          }
-
-          global.document.body.appendChild(s)
-
-
-      }(window));
+  }(window));
 </script>
   </body>
 </html>
