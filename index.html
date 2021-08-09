@@ -7,7 +7,7 @@
     <h1>This is a Heading</h1>
     <p>This is a paragraph.</p>
 
-   <script type="text/javascript">
+<!--    <script type="text/javascript">
     (function(global) {
       let s = global.document.createElement('script');
       s.src = "http://localhost:2003/sdk.js";
@@ -39,7 +39,44 @@
         },
       };
       global.document.body.appendChild(s)
-  }(window));
+  }(window)); -->
+    (function(global) {
+          let s = global.document.createElement('script');
+          s.src = "http://localhost:2003/sdk.js";
+          s.async = true;
+          window.compliantIO = {
+              config: {
+                  interface: {
+              leadColor: '#242424',
+              position: 'Right',
+            },
+            trigger: {
+              buttonColor: '#141515',
+              horizontalOffset: 10,
+              verticalOffset: 10,
+              hide: false,
+              shape: 'Squircle Big',
+              size: 'Medium',
+              horizontalPosition: 'Left',
+              verticalPosition: 'Center',
+            },
+            mobile: {
+              buttonColor: '#017A4F',
+              horizontalOffset: 10,
+              verticalOffset: 10,
+              hide: false,
+              shape: 'Round',
+              size: 'Medium',
+              horizontalPosition: 'Left',
+              verticalPosition: 'Bottom',
+            },
+              }
+          }
+
+          global.document.body.appendChild(s)
+
+
+      }(window));
 </script>
   </body>
 </html>
