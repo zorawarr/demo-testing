@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <script
+      id="compliant-script"
+      src="http://localhost:2003/sdk.js"
+      type="text/javascript"
+    >
+          (function(global) {
+          var s = global.document.createElement('script');
+          s.src = "http://localhost:2003/sdk.js";
+          s.async = "async";
+          window.compliantIO = {
+              config: {
+                  interface: {
+              leadColor: '#242424',
+              position: 'Right',
+            },
+            trigger: {
+              buttonColor: '#141515',
+              horizontalOffset: 10,
+              verticalOffset: 10,
+              hide: false,
+              shape: 'Squircle Big',
+              size: 'Medium',
+              horizontalPosition: 'Left',
+              verticalPosition: 'Center',
+            },
+            mobile: {
+              buttonColor: '#017A4F',
+              horizontalOffset: 10,
+              verticalOffset: 10,
+              hide: false,
+              shape: 'Round',
+              size: 'Medium',
+              horizontalPosition: 'Left',
+              verticalPosition: 'Bottom',
+            },
+              }
+          }
 
-<script id="compliant-script" src="http://localhost:2003/sdk.js" type="text/javascript">
-    window.compliantIO.config = {
-      interface: {
-        leadColor: '#242424',
-        position: 'Right',
-      },
-      trigger: {
-        buttonColor: '#141515',
-        horizontalOffset: 10,
-        verticalOffset: 10,
-        hide: false,
-        shape: 'Squircle Big',
-        size: 'Medium',
-        horizontalPosition: 'Left',
-        verticalPosition: 'Center',
-      },
-      mobile: {
-        buttonColor: '#017A4F',
-        horizontalOffset: 10,
-        verticalOffset: 10,
-        hide: false,
-        shape: 'Round',
-        size: 'Medium',
-        horizontalPosition: 'Left',
-        verticalPosition: 'Bottom',
-      },
-    };
-    window.compliantIO.init(window.compliantIO.config );
-  </script>
-</body>
+          global.document.body.appendChild(s)
+
+
+      })(window));
+    </script>
+  </body>
 </html>
