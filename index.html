@@ -1,85 +1,452 @@
-<!DOCTYPE html>
+
 <html>
   <head>
-    <title>Page Title</title>
+    <meta charset="utf-8" />
   </head>
-  <body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
 
-<!-- <script type="text/javascript">
-    (function(global) {
-      let s = global.document.createElement('script');
-      s.src = "http://localhost:2003/sdk.js";
-      s.async = true;
-      window.compliantIO = {
-        config: {
-        interface: {
-          leadColor: '#ff0000',
-          position: 'Right',
-        },
-        trigger: {
-          buttonColor: '#ffde05',
-          horizontalOffset: 30,
-          verticalOffset: 60,
-          hide: false,
-          shape: 'Squircle Big',
-          size: 'Big',
-          horizontalPosition: 'Left',
-          verticalPosition: 'Center',
-        },
-        mobile: {
-          buttonColor: '#ffde05',
-          horizontalOffset: 10,
-          verticalOffset: 10,
-          hide: false,
-          shape: 'Round',
-          size: 'Medium',
-          horizontalPosition: 'Left',
-          verticalPosition: 'Top',
-        },
-      },
-    };
-      global.document.body.appendChild(s)
-  }(window));
-</script> -->
-<script type="text/javascript">
-    (function(global) {
-      let s = global.document.createElement('script');
-      s.src = "http://localhost:2003/sdk.js";
-      s.async = true;
-      window.compliantIO = {
-        config: {
-        interface: {
-          leadColor: '#efbdcc',
-          position: 'Left',
-        },
-        trigger: {
-          buttonColor: '#757575',
-          horizontalOffset: 10,
-          verticalOffset: 10,
-          hide: false,
-          shape: 'Round',
-          size: 'Big',
-          horizontalPosition: 'Left',
-          verticalPosition: 'Bottom',
-        },
-        mobile: {
-          buttonColor: '#757575',
-          horizontalOffset: 10,
-          verticalOffset: 10,
-          hide: false,
-          shape: 'Round',
-          size: 'Medium',
-          horizontalPosition: 'Left',
-          verticalPosition: 'Bottom',
-        },
-      },
-    };
-      global.document.body.appendChild(s)
-  }(window));
-</script>
+  <body>
+    <img
+      src="https://assets-global.website-files.com/5faa2f162d0124566f0fd27c/5fc5f954cf58847c79be334e_PR%402x-p-500.png"
+      alt=""
+      height="300"
+      width="300"
+    />
+    <img
+      src="https://source.unsplash.com/random"
+      height="300"
+      width="300"
+      alt=""
+    />
+    <img
+      src="http://localhost:2003/2.jpeg"
+      alt="anand chaudhary"
+      height="300"
+      width="300"
+    />
+    <img src="./1.jpeg" alt="" height="300" width="300" />
+    <img
+      src="https://source.unsplash.com/user/erondu"
+      alt=""
+      height="300"
+      width="300"
+    />
+    <img
+      src="https://source.unsplash.com/user/rolex"
+      alt=""
+      height="300"
+      width="300"
+    />
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYfSAlQioAlgDf750zw5h_CCgBdhYENYu9A&usqp=CAU"
+      alt=""
+      height="300"
+      width="300"
+    />
+
+    <div>
+      <!-- textarea -->
+
+      <!-- normal text area -->
+      <div>
+        <label>normal textarea label</label>
+        <textarea
+          name="normaltext"
+          rows="4"
+          cols="50"
+          placeholder="hey we are great"
+        >
+        </textarea>
+      </div>
+
+      <!-- label after normal text area -->
+      <div>
+        <textarea name="normaltextbeforelabel" rows="4" cols="50"> </textarea>
+        <label>label after normal text area</label>
+      </div>
+
+      <!-- label after normal text area -->
+      <div>
+        <textarea rows="4" cols="50"> </textarea>
+        <label>label after normal text area</label>
+      </div>
+
+      <!-- label after and before normal text area -->
+      <div>
+        <label>label before normal text area</label>
+        <textarea name="normaltextbeforelabel" rows="4" cols="50"> </textarea>
+        <label>label after normal text area</label>
+      </div>
+
+      <!-- span label before text area -->
+      <div>
+        <span>textarea span label</span>
+        <textarea name="w3review" rows="4" cols="50" aria-label="ayush mishra">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea
+        >
+      </div>
+
+      <!-- span out of the div -->
+      <span>textarea label on span</span>
+      <div>
+        <textarea name="textspan" rows="4" cols="50">
+textarea that has span outer </textarea
+        >
+      </div>
+
+      <!-- spans as label for textarea -->
+      <span>textarea label on div</span>
+      <span>required *</span>
+      <textarea name="divtext" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea
+      >
+
+      <!-- text area that has placeholder -->
+      <textarea name="textareaforth" rows="4" cols="50"></textarea>
+      <!-- text area that has placeholder -->
+      <textarea
+        name="textareaforthfefef"
+        rows="4"
+        cols="50"
+        placeholder="fill this field again"
+      >
+gegeg geg
+</textarea
+      >
+      <!-- text area that has placeholder -->
+      <textarea
+        name="textareaforthegetgetg"
+        rows="4"
+        cols="50"
+        title="ayush mishra"
+      >
+vfdbdgb
+</textarea
+      >
+      <label>sixtj textarea</label>
+
+      <div>
+        <label>Hey I'm lead label</label>
+        <textarea name="hey darko" rows="4" cols="50"></textarea>
+        <textarea name="hey dude" rows="4" cols="50"></textarea>
+        <textarea name="hey fucker" rows="4" cols="50"></textarea>
+        <textarea name="hey chinchan" rows="4" cols="50"></textarea>
+        <label>I'm label from bottom</label>
+      </div>
+
+      <label>hey boss</label>
+      <div>
+        <textarea name="hey darko" rows="4" cols="50"></textarea>
+        <textarea rows="4" cols="50"></textarea>
+        <input type="text" placeholder="hey i'm input" />
+        <textarea rows="4" cols="50"></textarea>
+        <textarea name="hey chinchan" rows="4" cols="50"></textarea>
+        <label>I'm label from bottom</label>
+      </div>
+
+      <!-- button -->
+      <div>
+        <label>First button</label>
+        <button type="button" name="first button">Plain Button</button>
+      </div>
+      <div>
+        <label>Second button</label>
+        <button type="button" name="second button">Plain Button</button>
+      </div>
+      <div>
+        <label>Third button</label>
+        <button type="button" name="third button">Plain Button</button>
+        <label>Third button</label>
+      </div>
+      <button type="button" name="forth button" title="my button">
+        Plain Button
+      </button>
+      <button type="button" name="fifth button" title="disable" disabled>
+        Button
+      </button>
+
+      <br />
+      <br />
+      <br />
+
+      <form action="#" id="nameform">
+        <label>First name:</label>
+        <input type="text" name="fname" /><br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" />
+      </form>
+      <button type="submit" form="nameform" value="Submit">Submit</button>
+
+      <form action="#">
+        <label>User ID:</label>
+        <input type="text" name="id" />
+
+        <label>Password:</label>
+        <input type="text" name="pass" />
+
+        <button type="reset" value="Reset">reset</button>
+        <button type="submit" value="Submit">Submit</button>
+      </form>
+
+      <div style="margin: 50px">
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin: 50px">
+        <audio controls autoplay>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin: 50px">
+        <audio controls autoplay>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin: 50px">
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin: 50px">
+        <audio controls>Your browser does not support the audio element.</audio>
+      </div>
+
+      <video width="320" height="240" controls autoplay>
+        <source
+          src="https://drive.google.com/uc?export=download&id=13yadqjvZV9F_1E0837bKX3ti9AUUh8QZ"
+          type="video/mp4"
+        />
+      </video>
+
+      <video width="320" height="240" controls>
+        <source src="www.youtube.com/embed/YE7VzlLtp-4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div id="test_link-55">YOLO 55</div>
+    <div id="wrapper">
+      <div class="container pt-5">
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.google.com/"
+                >Active</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.google.com/">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.google.com/"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="https://www.google.com/"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link active">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active">
+              <i class="fa fa-phone"></i>
+            </a>
+          </li>
+          <li class="nav-item px-4">
+            <label>Test Link</label>
+            <a class="nav-link"></a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link"></a>
+            <label>Link Test</label>
+          </li>
+          <li class="nav-item px-4">
+            <div id="test_link-44">YOLO 44</div>
+            <a class="nav-link" aria-labelledby="test_link-44">Link</a>
+          </li>
+          <li class="nav-item px-4">
+            <a
+              class="nav-link"
+              href="https://www.google.com/"
+              aria-labelledby="test_link-44"
+              >Link</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-labelledby="test_link-55">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-labelledby="test_link-55"></a>
+          </li>
+        </ul>
+
+        <main class="my-5">
+          <form>
+            <div class="form-group mb-3">
+              <label>Test 1.0</label>
+              <input type="text" class="form-control" />
+            </div>
+
+            <div class="form-group mb-3">
+              <input type="text" class="form-control" placeholder="text 2.34" />
+              <label>Test 2.0</label>
+            </div>
+
+            <div class="form-group mb-3">
+              <label id="other-label-28">Other text preview</label>
+              <input type="text" class="form-control" />
+              <label>my input label</label>
+            </div>
+
+            <div class="form-group mb-3">
+              <label id="other-label-48">The ultimate label</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="This is an example of inline"
+              />
+            </div>
+
+            <div class="form-group mb-3">
+              <input
+                aria-labelledby="other-label-48"
+                type="text"
+                class="form-control"
+                placeholder="This is an example of inline yohahahha"
+              />
+            </div>
+
+            <div class="form-group mb-3">
+              <input
+                aria-labelledby="other-label-48"
+                type="text"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Add Name</label>
+              <input type="text" class="form-control" />
+              <input type="text" class="form-control" />
+            </div>
+          </form>
+
+          <form>
+            <input type="text" class="form-control mb-3" />
+            <input type="email" class="form-control mb-3" />
+            <input type="checkbox" class="form-control mb-3" />
+            <input type="url" class="form-control mb-3" />
+            <input type="text" placeholder="hey i'm alone" />
+            <input
+              type="range"
+              class="form-control mb-3"
+              aria-label="hey we are on testing mode"
+            />
+            <input type="radio" class="form-control mb-3" />
+            <input type="search" class="form-control mb-3" />
+            <input type="submit" class="form-control mb-3" />
+            <input type="button" class="form-control mb-3" />
+          </form>
+
+          <div class="form-group">
+            <label><i class="fa fa-email"></i></label>
+            <input type="email" class="form-control mb-3" />
+          </div>
+
+          <div>
+            <label></label>
+            <input type="text" class="form-control mb-3" />
+          </div>
+        </main>
+
+        <div>
+          <div class="form-control">
+            <label>Test Label</label>
+            <select>
+              <option>Test</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label></label>
+            <select>
+              <option selected>Test 1</option>
+              <option>Test 2</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label>Test my select</label>
+            <select>
+              <option selected>Test 1</option>
+              <option>Test 2</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label>Test my select</label>
+            <select></select>
+          </div>
+
+          <div class="form-control">
+            <select>
+              <option>Test 1</option>
+              <option selected>Test 2</option>
+            </select>
+          </div>
+
+          <div>
+            <p>something ever happens saaahh</p>
+            <input type="text" class="mb-3" />
+          </div>
+
+          <div>
+            <div>somethingever happensshhaaahfreeerereh</div>
+            <input type="text" class="mb-3" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="root"></div>
     
-  </body>
-    
-    </html>
+<!--   <script src="https://dkzkucdzbu32y.cloudfront.net/sdk.js"></script>  -->
+     </body>
+</html>
